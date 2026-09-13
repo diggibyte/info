@@ -112,6 +112,7 @@
             <ul>
               <li><strong>Learn:</strong> prompting, context engineering, secure coding practices with AI tools.</li>
               <li><strong>Course:</strong> Claude Code quickstart.</li>
+              <li><strong>Hands-on:</strong> use an AI coding assistant in your IDE on a real backlog item; try MCP in VS Code, local Codex workflows, or Claude Code, and compare how tool access changes the quality of outputs.</li>
               <li><strong>Build:</strong> use an AI coding assistant on one real backlog task this week.</li>
               <li><strong>Evaluated by:</strong> this feeds the "AI awareness and adoption" impact dimension in Week 8.</li>
             </ul>
@@ -131,7 +132,8 @@
             <p><strong>Week 3: Agent Architecture &amp; Tooling</strong> · ~5–6 hrs</p>
             <ul>
               <li><strong>Learn:</strong> agent design patterns, tool calling, MCP, memory, and human-in-the-loop controls.</li>
-              <li><strong>Course:</strong> Mosaic AI Agent Framework and MCP documentation.</li>
+              <li><strong>Course:</strong> Mosaic AI Agent Framework, MCP documentation, and Databricks Genie / IDE-connected agent patterns.</li>
+              <li><strong>Hands-on:</strong> connect an agent to local or cloud tools using MCP; include a Databricks Genie or service connection in the flow so the agent can read context from your environment instead of acting in a vacuum.</li>
               <li><strong>Build:</strong> your first agent that calls at least 3 tools.</li>
               <li><strong>Evaluated by:</strong> this agent becomes the foundation you specialize into your role's assignment next.</li>
             </ul>
@@ -220,6 +222,26 @@
 
     <div class="role-grid">
 
+      <div class="role-card" style="grid-column: 1 / -1; background: rgba(59,130,246,.06); border: 1px solid rgba(59,130,246,.25);">
+        <div class="role-card-head">
+          <span class="role-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20"/>
+              <path d="M4 6h16"/>
+              <path d="M4 18h16"/>
+            </svg>
+          </span>
+          <div>
+            <div class="role-name">Mandatory Toolchain</div>
+            <div class="role-sub">Databricks AI Dev Toolkit + MCP + IDE agent workflows</div>
+          </div>
+        </div>
+        <div class="role-card-body">
+          <p>All Data Engineers, Data Scientists, and BI Engineers should complete the Databricks AI Dev Toolkit, learn MCP in VS Code or a coding agent, and understand how to connect Databricks Genie, services, or internal tools from the IDE.</p>
+          <div class="assignment"><b>Mandatory:</b> Databricks AI Dev Toolkit; MCP for VS Code or equivalent IDE tooling; either OpenAI or Anthropic governance training based on the model stack being used.</div>
+        </div>
+      </div>
+
       <!-- Data Engineers -->
       <div class="role-card">
         <div class="role-card-head">
@@ -245,6 +267,7 @@
             <li>Lakeflow, Delta &amp; Unity Catalog</li>
             <li>Automated data-quality agents</li>
           </ul>
+          <div class="assignment"><b>Mandatory:</b> Databricks AI Dev Toolkit, MCP for VS Code, and local coding agent workflows.</div>
           <div class="assignment"><b>Course:</b> Databricks Lakeflow docs, Unity Catalog governance, and agent tooling.</div>
           <div class="assignment"><b>Build:</b> an Autonomous Data Pipeline Agent that detects issues, diagnoses root cause, checks lineage and quality, and recommends or safely executes remediation.</div>
           <div class="assignment"><b>Evaluate:</b> did the agent act on the right signal, reduce manual triage, and explain the decision path clearly?</div>
@@ -276,6 +299,7 @@
             <li>Evaluation &amp; hallucination testing</li>
             <li>Guardrails &amp; MLflow</li>
           </ul>
+          <div class="assignment"><b>Mandatory:</b> Databricks AI Dev Toolkit, MCP for IDE tooling, and service access patterns using Databricks Genie or connected tools.</div>
           <div class="assignment"><b>Course:</b> advanced RAG, agent evals, and MLflow tracing.</div>
           <div class="assignment"><b>Build:</b> a multi-agent business analyst: planner, researcher/data agent, reasoning/analysis agent, and validation agent.</div>
           <div class="assignment"><b>Evaluate:</b> how accurate, grounded, and explainable was the final answer under real business questions?</div>
@@ -308,6 +332,7 @@
             <li>Proactive insight generation</li>
             <li>Action-oriented analytical agents</li>
           </ul>
+          <div class="assignment"><b>Mandatory:</b> Databricks AI Dev Toolkit, GenAI-enabled BI workflows, and MCP / IDE connectivity for data and service access.</div>
           <div class="assignment"><b>Course:</b> semantic modeling, AI-BI patterns, and natural-language analytics workflows.</div>
           <div class="assignment"><b>Build:</b> an agent that answers questions like "Why did gross margin decline?" by investigating drivers, explaining the trend, and recommending next steps.</div>
           <div class="assignment"><b>Evaluate:</b> could a business stakeholder trust the answer without needing a data analyst to validate every step?</div>
@@ -425,6 +450,46 @@
           <div class="resource-detail">
             <p>Practical guidance for building GenAI apps with Databricks tooling and patterns.</p>
             <a class="resource-link" href="https://docs.databricks.com/aws/en/generative-ai/guide/mosaic-ai-gen-ai-capabilities" target="_blank" rel="noopener">Open resource ↗</a>
+          </div>
+        </details>
+
+        <details class="resource-item">
+          <summary>MCP for VS Code</summary>
+          <div class="resource-detail">
+            <p>Configure AI tools in the IDE so the coding agent can access local files, tools, and service context directly from your workflow.</p>
+            <a class="resource-link" href="https://code.visualstudio.com/docs/copilot/customization/mcp" target="_blank" rel="noopener">Open resource ↗</a>
+          </div>
+        </details>
+
+        <details class="resource-item">
+          <summary>Local Codex and AI coding workflow</summary>
+          <div class="resource-detail">
+            <p>Learn how to use local coding agents, tool access, and structured prompts to build faster without losing control of the environment.</p>
+            <a class="resource-link" href="https://github.com/openai/codex" target="_blank" rel="noopener">Open resource ↗</a>
+          </div>
+        </details>
+
+        <details class="resource-item">
+          <summary>Claude Code</summary>
+          <div class="resource-detail">
+            <p>Hands-on walkthrough for working with coding agents in your shell and IDE, with strong support for iterative development and codebase understanding.</p>
+            <a class="resource-link" href="https://docs.claude.com/en/docs/claude-code/quickstart" target="_blank" rel="noopener">Open resource ↗</a>
+          </div>
+        </details>
+
+        <details class="resource-item">
+          <summary>Databricks AI Dev Toolkit</summary>
+          <div class="resource-detail">
+            <p>Mandatory toolchain learning for Data Engineers, Data Scientists, and BI Engineers: build, validate, and connect AI workflows to Databricks services from the IDE.</p>
+            <a class="resource-link" href="https://docs.databricks.com/aws/en/dev-tools/ai-dev-tools" target="_blank" rel="noopener">Open resource ↗</a>
+          </div>
+        </details>
+
+        <details class="resource-item">
+          <summary>Databricks Genie and connected services</summary>
+          <div class="resource-detail">
+            <p>Use Genie and connected data services from the IDE or coding agent so the agent can reason against governed business context.</p>
+            <a class="resource-link" href="https://docs.databricks.com/aws/en/genie/" target="_blank" rel="noopener">Open resource ↗</a>
           </div>
         </details>
 
