@@ -7,7 +7,7 @@
 <title>Diggibyte: 8-Week Agentic Engineering Journey</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="light-theme">
 
 <nav>
   <div class="nav-inner">
@@ -18,9 +18,9 @@
       <a href="#resources">Resources</a>
       <a href="#impact">Your Impact</a>
       <a href="#certification">Certifications</a>
-      <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to light theme">
-        <span class="theme-icon" aria-hidden="true">☀</span>
-        <span class="theme-label">Light theme</span>
+      <button class="theme-toggle" type="button" aria-pressed="true" aria-label="Switch to dark theme">
+        <span class="theme-icon" aria-hidden="true">☾</span>
+        <span class="theme-label">Dark theme</span>
       </button>
     </div>
   </div>
@@ -516,10 +516,16 @@
 
 <script>
   const themeToggle = document.querySelector('.theme-toggle');
-  const savedTheme = localStorage.getItem('theme');
+  let savedTheme = null;
 
-  if (savedTheme === 'light') {
-    document.body.classList.add('light-theme');
+  try {
+    savedTheme = localStorage.getItem('theme');
+  } catch (error) {
+    savedTheme = null;
+  }
+
+  if (savedTheme === 'dark') {
+    document.body.classList.remove('light-theme');
   }
 
   function updateThemeToggle() {
@@ -532,7 +538,11 @@
 
   themeToggle.addEventListener('click', () => {
     const isLight = document.body.classList.toggle('light-theme');
-    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    try {
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    } catch (error) {
+      // Theme switching still works when browser storage is unavailable.
+    }
     updateThemeToggle();
   });
 
