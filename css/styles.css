@@ -88,10 +88,8 @@
 
   .brand-logo {
     display: block;
-    width: 112px;
-    height: 36px;
-    object-fit: contain;
-    object-position: left center;
+    width: 190px;
+    height: auto;
   }
 
   .navlinks {
@@ -218,6 +216,10 @@
 
     .navlinks a {
       font-size: 13px;
+    }
+
+    .brand-logo {
+      width: 150px;
     }
   }
 
