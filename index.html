@@ -11,7 +11,7 @@
 
 <nav>
   <div class="nav-inner">
-    <div class="brand"><img src="assets/logo.png" alt="Diggibyte"></div>
+    <div class="brand">Diggibyte</div>
     <div class="navlinks">
       <a href="#journey">Weekly Journey</a>
       <a href="#tracks">Role Tracks</a>
@@ -24,7 +24,6 @@
 
 <header class="hero">
   <div class="wrap">
-    <img class="hero-logo" src="assets/logo.png" alt="Diggibyte">
     <p class="initiative">An initiative by the Diggibyte L&amp;D team</p>
     <h1 class="program-name">Employee Upskilling Program</h1>
     <p class="tagline">8 weeks to build with agentic AI, not just talk about it.</p>
@@ -109,9 +108,12 @@
 
           <div class="wk-section-block">
             <p><strong>Week 1: AI-Native Ways of Working</strong> · ~4 hrs</p>
+            <div class="course-tags">
+              <a class="course-tag claude" href="https://academy.claude.com/courses/claude-code-101" target="_blank" rel="noopener">Claude Code 101</a>
+              <a class="course-tag claude" href="https://academy.claude.com/courses/claude-platform-101" target="_blank" rel="noopener">Claude Platform 101</a>
+            </div>
             <ul>
               <li><strong>Learn:</strong> prompting, context engineering, secure coding practices with AI tools.</li>
-              <li><strong>Course:</strong> Claude Code quickstart.</li>
               <li><strong>Hands-on:</strong> use an AI coding assistant in your IDE on a real backlog item; try MCP in VS Code, local Codex workflows, or Claude Code, and compare how tool access changes the quality of outputs.</li>
               <li><strong>Build:</strong> use an AI coding assistant on one real backlog task this week.</li>
               <li><strong>Evaluated by:</strong> this feeds the "AI awareness and adoption" impact dimension in Week 8.</li>
@@ -120,9 +122,11 @@
 
           <div class="wk-section-block">
             <p><strong>Week 2: GenAI &amp; RAG Foundations</strong> · ~5 hrs</p>
+            <div class="course-tags">
+              <a class="course-tag databricks" href="https://partner-academy.databricks.com/learn/courses/5786/building-rag-agents-with-agent-bricks/sessions/22162/B5QNWM4" target="_blank" rel="noopener">Building RAG Agents</a>
+            </div>
             <ul>
               <li><strong>Learn:</strong> LLM/GenAI basics, embeddings, RAG, structured outputs, and model selection.</li>
-              <li><strong>Course:</strong> Building GenAI apps on Databricks and Building &amp; Evaluating Advanced RAG.</li>
               <li><strong>Build:</strong> a basic RAG application over an internal document set.</li>
               <li><strong>Evaluated by:</strong> this RAG app becomes the base you build on in Weeks 4–5; keep it and improve it.</li>
             </ul>
@@ -130,9 +134,13 @@
 
           <div class="wk-section-block">
             <p><strong>Week 3: Agent Architecture &amp; Tooling</strong> · ~5–6 hrs</p>
+            <div class="course-tags">
+              <a class="course-tag claude" href="https://academy.claude.com/courses/introduction-to-model-context-protocol" target="_blank" rel="noopener">MCP Intro</a>
+              <a class="course-tag claude" href="https://academy.claude.com/courses/model-context-protocol-advanced-topics" target="_blank" rel="noopener">MCP Advanced</a>
+              <a class="course-tag databricks" href="https://partner-academy.databricks.com/learn/courses/5785/building-agentic-applications-on-databricks" target="_blank" rel="noopener">Databricks Agentic Apps</a>
+            </div>
             <ul>
               <li><strong>Learn:</strong> agent design patterns, tool calling, MCP, memory, and human-in-the-loop controls.</li>
-              <li><strong>Course:</strong> Mosaic AI Agent Framework, MCP documentation, and Databricks Genie / IDE-connected agent patterns.</li>
               <li><strong>Hands-on:</strong> connect an agent to local or cloud tools using MCP; include a Databricks Genie or service connection in the flow so the agent can read context from your environment instead of acting in a vacuum.</li>
               <li><strong>Build:</strong> your first agent that calls at least 3 tools.</li>
               <li><strong>Evaluated by:</strong> this agent becomes the foundation you specialize into your role's assignment next.</li>
@@ -452,173 +460,44 @@
     <h2>Resources</h2>
     <p class="section-lede">Reference material grouped by phase and role. Expand a card for more detail when you need context.</p>
 
-    <div class="res-block" style="border-left: 3px solid #8b5cf6; background: rgba(139, 92, 246, 0.05);">
+    <div class="res-block res-block-note">
       <h3>Governance track</h3>
-      <p style="margin: 0 0 10px;">Every participant should learn the platform governance basics and complete one provider governance track beyond Databricks. Databricks is the platform baseline; candidates should also learn either OpenAI or Anthropic/Claude governance depending on the model stack they are using.</p>
-      <p style="margin: 0;">This is not optional for production-ready AI work.</p>
+      <p>Every participant should learn the core platform governance basics and complete one provider governance track beyond Databricks. Databricks is the platform baseline; candidates should also learn either Claude or Databricks governance depending on the model stack they are using.</p>
     </div>
 
     <div class="res-block">
-      <h3>CORE FOUNDATION · WEEKS 1–3</h3>
-      <div class="resource-list">
-        <details class="resource-item">
-          <summary>Databricks Academy learning paths</summary>
-          <div class="resource-detail">
-            <p>Structured learning path for Databricks fundamentals and platform capabilities.</p>
-            <a class="resource-link" href="https://www.databricks.com/learn/training/login" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
-
-        <details class="resource-item">
-          <summary>Prompt engineering overview</summary>
-          <div class="resource-detail">
-            <p>Core prompt patterns, structure, and design principles for reliable AI interaction.</p>
-            <a class="resource-link" href="https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
-
-        <details class="resource-item">
-          <summary>Claude Code quickstart</summary>
-          <div class="resource-detail">
-            <p>Fast-start guide for working with coding agents in a real team workflow.</p>
-            <a class="resource-link" href="https://docs.claude.com/en/docs/claude-code/quickstart" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
-
-        <details class="resource-item">
-          <summary>Building GenAI apps on Databricks</summary>
-          <div class="resource-detail">
-            <p>Practical guidance for building GenAI apps with Databricks tooling and patterns.</p>
-            <a class="resource-link" href="https://docs.databricks.com/aws/en/generative-ai/guide/mosaic-ai-gen-ai-capabilities" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
-
-        <details class="resource-item">
-          <summary>MCP for VS Code</summary>
-          <div class="resource-detail">
-            <p>Configure AI tools in the IDE so the coding agent can access local files, tools, and service context directly from your workflow.</p>
-            <a class="resource-link" href="https://code.visualstudio.com/docs/copilot/customization/mcp" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
-
-        <details class="resource-item">
-          <summary>Local Codex and AI coding workflow</summary>
-          <div class="resource-detail">
-            <p>Learn how to use local coding agents, tool access, and structured prompts to build faster without losing control of the environment.</p>
-            <a class="resource-link" href="https://github.com/openai/codex" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
-
-        <details class="resource-item">
-          <summary>Claude Code</summary>
-          <div class="resource-detail">
-            <p>Hands-on walkthrough for working with coding agents in your shell and IDE, with strong support for iterative development and codebase understanding.</p>
-            <a class="resource-link" href="https://docs.claude.com/en/docs/claude-code/quickstart" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
-
-        <details class="resource-item">
-          <summary>Databricks AI Dev Toolkit</summary>
-          <div class="resource-detail">
-            <p>Mandatory toolchain learning for Data Engineers, Data Scientists, and BI Engineers: build, validate, and connect AI workflows to Databricks services from the IDE.</p>
-            <a class="resource-link" href="https://docs.databricks.com/aws/en/dev-tools/ai-dev-tools" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
-
-        <details class="resource-item">
-          <summary>Databricks Genie and connected services</summary>
-          <div class="resource-detail">
-            <p>Use Genie and connected data services from the IDE or coding agent so the agent can reason against governed business context.</p>
-            <a class="resource-link" href="https://docs.databricks.com/aws/en/genie/" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
-
-        <details class="resource-item">
-          <summary>OpenAI usage policies and governance</summary>
-          <div class="resource-detail">
-            <p>Understanding policy boundaries, safe use, and responsible deployment for OpenAI-based systems.</p>
-            <a class="resource-link" href="https://platform.openai.com/docs/guides/usage-policies" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
-
-        <details class="resource-item">
-          <summary>Anthropic safety and model governance</summary>
-          <div class="resource-detail">
-            <p>Best practices for safe deployment, model behavior, and governance with Claude-based systems.</p>
-            <a class="resource-link" href="https://docs.anthropic.com/en/docs/about-claude/models/all-models" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
-
-        <details class="resource-item">
-          <summary>Databricks AI governance and access control</summary>
-          <div class="resource-detail">
-            <p>Core platform controls for secure model use, access, and governance in Databricks.</p>
-            <a class="resource-link" href="https://docs.databricks.com/aws/en/security/" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
+      <h3>Phase 1 · Weeks 1–3</h3>
+      <div class="resource-grid">
+        <a class="resource-pill claude" href="https://academy.claude.com/courses/claude-code-101" target="_blank" rel="noopener">Claude Code 101</a>
+        <a class="resource-pill claude" href="https://academy.claude.com/courses/claude-platform-101" target="_blank" rel="noopener">Claude Platform 101</a>
+        <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5786/building-rag-agents-with-agent-bricks/sessions/22162/B5QNWM4" target="_blank" rel="noopener">Build RAG Agents</a>
+        <a class="resource-pill claude" href="https://academy.claude.com/courses/introduction-to-model-context-protocol" target="_blank" rel="noopener">MCP Intro</a>
+        <a class="resource-pill claude" href="https://academy.claude.com/courses/model-context-protocol-advanced-topics" target="_blank" rel="noopener">MCP Advanced</a>
+        <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5785/building-agentic-applications-on-databricks" target="_blank" rel="noopener">Agentic Apps</a>
       </div>
     </div>
 
     <div class="res-block">
-      <h3>ROLE SPECIALIZATION · WEEKS 4–5</h3>
-      <div class="resource-list">
-        <details class="resource-item">
-          <summary>Lakeflow pipelines</summary>
-          <div class="resource-detail">
-            <p>Reference for pipeline design, orchestration, and data engineering patterns.</p>
-            <a class="resource-link" href="https://docs.databricks.com/aws/en/ldp/concepts" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
-
-        <details class="resource-item">
-          <summary>Genie natural-language analytics</summary>
-          <div class="resource-detail">
-            <p>Explore how business users can ask analytical questions in natural language.</p>
-            <a class="resource-link" href="https://docs.databricks.com/aws/en/genie/" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
+      <h3>Phase 2 · Weeks 4–5</h3>
+      <div class="resource-grid">
+        <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5785/building-agentic-applications-on-databricks" target="_blank" rel="noopener">Databricks Agentic Apps</a>
+        <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5786/building-rag-agents-with-agent-bricks/sessions/22162/B5QNWM4" target="_blank" rel="noopener">RAG Agents</a>
+        <a class="resource-pill claude" href="https://academy.claude.com/courses/building-with-the-claude-api" target="_blank" rel="noopener">Claude API</a>
       </div>
     </div>
 
     <div class="res-block">
-      <h3>PRODUCTION &amp; REAL-WORLD APPLICATION · WEEKS 6–7</h3>
-      <div class="resource-list">
-        <details class="resource-item">
-          <summary>Unity Catalog governance</summary>
-          <div class="resource-detail">
-            <p>Governance model for data access, lineage, and secure agent-tool integration.</p>
-            <a class="resource-link" href="https://docs.databricks.com/aws/en/data-governance/unity-catalog/" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
-
-        <details class="resource-item">
-          <summary>MLflow tracing for GenAI</summary>
-          <div class="resource-detail">
-            <p>Monitor prompts, tool calls, latency, and response quality across the agent lifecycle.</p>
-            <a class="resource-link" href="https://docs.databricks.com/en/mlflow3/genai/tracing/index.html" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
+      <h3>Phase 3 · Weeks 6–7</h3>
+      <div class="resource-grid">
+        <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5784/deploying-and-monitoring-agent-applications-on-databricks/sessions/22172/B7NK2WO" target="_blank" rel="noopener">Deploy &amp; Monitor</a>
+        <a class="resource-pill claude" href="https://academy.claude.com/courses/claude-code-in-action" target="_blank" rel="noopener">Claude Code in Action</a>
       </div>
     </div>
 
     <div class="res-block">
-      <h3>EVALUATION &amp; SHOWCASE · WEEK 8</h3>
-      <div class="resource-list">
-        <details class="resource-item">
-          <summary>Agent evaluation principles</summary>
-          <div class="resource-detail">
-            <p>How to evaluate agent quality with measurable dimensions like correctness and hallucination.</p>
-            <a class="resource-link" href="https://www.databricks.com/dataaisummit/session/agent-evaluations" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
-
-        <details class="resource-item">
-          <summary>AI Gateway and serving patterns</summary>
-          <div class="resource-detail">
-            <p>Patterns for model routing, rate limits, and production-grade access control.</p>
-            <a class="resource-link" href="https://www.databricks.com/product/artificial-intelligence/unity-gateway" target="_blank" rel="noopener">Open resource ↗</a>
-          </div>
-        </details>
+      <h3>Phase 4 · Week 8</h3>
+      <div class="resource-grid">
+        <a class="resource-pill claude" href="https://academy.claude.com/courses/ai-native-sdlc-playbook" target="_blank" rel="noopener">AI-Native SDLC</a>
       </div>
     </div>
   </div>

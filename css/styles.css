@@ -1,12 +1,15 @@
   :root {
-    --orange: #ff8a00;
-    --charcoal: #3f3d3d;
-    --grey: #6e6c6c;
-    --border: #d6d3d0;
-    --row-fill: #f7f7f7;
-    --header-fill: #fbebd6;
-    --blue: #1f4d78;
-    --white: #ffffff;
+    --orange: #f59e0b;
+    --charcoal: #edf2ff;
+    --grey: #a9b4c5;
+    --border: #2b374d;
+    --row-fill: #111827;
+    --header-fill: #1b2335;
+    --blue: #7dd3fc;
+    --white: #0b1020;
+    --panel: #111827;
+    --panel-strong: #141d2d;
+    --shadow: rgba(15, 23, 42, 0.45);
   }
 
   * {
@@ -19,7 +22,7 @@
 
   body {
     margin: 0;
-    background: var(--white);
+    background: linear-gradient(180deg, #0b1020 0%, #0f172a 100%);
     color: var(--charcoal);
     font-family: Calibri, "Segoe UI", Arial, sans-serif;
     font-size: 16px;
@@ -42,8 +45,9 @@
     position: sticky;
     top: 0;
     z-index: 50;
-    background: var(--white);
+    background: rgba(11, 16, 32, 0.9);
     border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(10px);
   }
 
   .nav-inner {
@@ -65,17 +69,12 @@
     letter-spacing: 0.2px;
   }
 
-  .brand img {
-    height: 44px;
-    width: auto;
-    display: block;
-  }
-
-  .hero-logo {
-    height: 52px;
-    width: auto;
-    display: block;
-    margin-bottom: 24px;
+  .brand {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--charcoal);
   }
 
   .initiative {
@@ -241,14 +240,14 @@
   }
 
   .phase-card {
-    background: var(--white);
+    background: var(--panel);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 22px 20px;
     display: flex;
     flex-direction: column;
     gap: 14px;
-    box-shadow: 0 6px 16px rgba(63, 61, 61, 0.04);
+    box-shadow: 0 6px 16px rgba(2, 6, 23, 0.22);
   }
 
   .phase-icon {
@@ -327,12 +326,12 @@
   }
 
   .wk-section {
-    background: var(--white);
+    background: var(--panel);
     border: 1px solid var(--border);
     border-left: 4px solid var(--orange);
     border-radius: 14px;
     padding: 22px 22px 18px 22px;
-    box-shadow: 0 4px 14px rgba(63, 61, 61, 0.03);
+    box-shadow: 0 4px 14px rgba(2, 6, 23, 0.18);
   }
 
   .wk-step-badge {
@@ -397,7 +396,7 @@
   .wk-section-block {
     border-left: 3px solid var(--orange);
     background: var(--row-fill);
-    border-radius: 6px;
+    border-radius: 8px;
     padding: 12px 14px;
     margin: 10px 0;
     max-width: 720px;
@@ -526,9 +525,10 @@
 
   .role-card {
     border: 1px solid var(--border);
-    border-radius: 4px;
+    border-radius: 10px;
     overflow: hidden;
-    background: var(--white);
+    background: var(--panel);
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.12);
   }
 
   .role-card-head {
@@ -603,6 +603,14 @@
     margin-bottom: 26px;
   }
 
+  .res-block-note {
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.28);
+    border-left: 3px solid var(--orange);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+
   .res-block h3 {
     font-size: 13px;
     letter-spacing: 0.2px;
@@ -613,10 +621,63 @@
     padding-bottom: 8px;
   }
 
-  .resource-list {
+  .resource-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+  }
+
+  .resource-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 10px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    font-size: 12.5px;
+    font-weight: 700;
+    text-align: center;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+
+  .resource-pill:hover {
+    transform: translateY(-1px);
+    border-color: var(--orange);
+  }
+
+  .course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 8px 0 10px;
+  }
+
+  .course-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 26px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+
+  .claude {
+    background: rgba(125, 211, 252, 0.08);
+    color: #dff7ff;
+    border-color: rgba(125, 211, 252, 0.32);
+  }
+
+  .databricks {
+    background: rgba(245, 158, 11, 0.08);
+    color: #ffe4b3;
+    border-color: rgba(245, 158, 11, 0.32);
   }
 
   @media (max-width: 760px) {
