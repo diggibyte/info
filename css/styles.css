@@ -34,6 +34,28 @@
     color: var(--blue);
   }
 
+  .light-theme {
+    --orange: #c26b00;
+    --charcoal: #252a34;
+    --grey: #5f6875;
+    --border: #d6dbe3;
+    --row-fill: #f4f6f8;
+    --header-fill: #ffffff;
+    --blue: #185b8f;
+    --white: #ffffff;
+    --panel: #ffffff;
+    --panel-strong: #f7f8fa;
+    --shadow: rgba(31, 41, 55, 0.12);
+  }
+
+  body.light-theme {
+    background: linear-gradient(180deg, #ffffff 0%, #f3f5f7 100%);
+  }
+
+  body.light-theme nav {
+    background: rgba(255, 255, 255, 0.92);
+  }
+
   .wrap {
     max-width: 1040px;
     margin: 0 auto;
@@ -75,6 +97,34 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--charcoal);
+  }
+
+  .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    min-height: 34px;
+    padding: 7px 11px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--panel);
+    color: var(--charcoal);
+    font: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .theme-toggle:hover,
+  .theme-toggle:focus-visible {
+    border-color: var(--orange);
+    outline: none;
+  }
+
+  .theme-icon {
+    color: var(--orange);
+    font-size: 15px;
+    line-height: 1;
   }
 
   .initiative {
@@ -678,6 +728,18 @@
     background: rgba(245, 158, 11, 0.08);
     color: #ffe4b3;
     border-color: rgba(245, 158, 11, 0.32);
+  }
+
+  .light-theme .claude {
+    background: #e9f7fb;
+    color: #14526a;
+    border-color: #a7d8e5;
+  }
+
+  .light-theme .databricks {
+    background: #fff3df;
+    color: #824900;
+    border-color: #efc98c;
   }
 
   @media (max-width: 760px) {
