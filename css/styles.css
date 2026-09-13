@@ -445,15 +445,70 @@
   .outcome {
     font-size: 14px;
     color: var(--charcoal);
-    border-left: 3px solid var(--orange);
-    background: var(--row-fill);
-    padding: 8px 12px;
-    max-width: 620px;
+    background: linear-gradient(180deg, rgba(255,138,0,0.07), rgba(255,138,0,0.02));
+    border: 1px solid rgba(255,138,0,0.28);
+    border-left: 4px solid var(--orange);
+    border-radius: 12px;
+    padding: 14px 16px;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(63, 61, 61, 0.03);
   }
 
   .outcome b {
     color: var(--orange);
     font-weight: 700;
+  }
+
+  .good-look {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--orange);
+    background: var(--row-fill);
+    border-radius: 10px;
+    margin: 12px 0 16px;
+    overflow: hidden;
+  }
+
+  .good-look summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 12px 14px;
+    font-size: 13.5px;
+    color: var(--charcoal);
+    font-weight: 700;
+    background: rgba(255, 138, 0, 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .good-look summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .good-look summary::after {
+    content: "+";
+    color: var(--orange);
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  .good-look[open] summary::after {
+    content: "−";
+  }
+
+  .good-look ul {
+    margin: 0;
+    padding: 10px 14px 14px 28px;
+    font-size: 13.5px;
+    color: var(--charcoal);
+  }
+
+  .good-look li {
+    margin-bottom: 6px;
   }
 
   /* ---------- ROLE TRACKS ---------- */
