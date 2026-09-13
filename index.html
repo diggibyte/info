@@ -18,9 +18,8 @@
       <a href="#resources">Resources</a>
       <a href="#impact">Your Impact</a>
       <a href="#certification">Certifications</a>
-      <button class="theme-toggle" type="button" aria-pressed="true" aria-label="Switch to dark theme">
+      <button class="theme-toggle" type="button" aria-pressed="true" aria-label="Switch to dark theme" title="Switch theme">
         <span class="theme-icon" aria-hidden="true">☾</span>
-        <span class="theme-label">Dark theme</span>
       </button>
     </div>
   </div>
@@ -533,7 +532,6 @@
     themeToggle.setAttribute('aria-pressed', String(isLight));
     themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
     themeToggle.querySelector('.theme-icon').textContent = isLight ? '☾' : '☀';
-    themeToggle.querySelector('.theme-label').textContent = isLight ? 'Dark theme' : 'Light theme';
   }
 
   themeToggle.addEventListener('click', () => {
