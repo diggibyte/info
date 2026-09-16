@@ -1,554 +1,689 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Diggibyte 8-week agentic engineering upskilling program landing page.">
-<title>Diggibyte: 8-Week Agentic Engineering Journey</title>
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Diggibyte 8-week agentic engineering upskilling program landing page.">
+  <title>Diggibyte: 8-Week Agentic Engineering Journey</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="light-theme">
-
-<nav>
-  <div class="nav-inner">
-    <div class="brand">
-      <img class="brand-logo" src="assets/logo.png" alt="Diggibyte">
-    </div>
-    <div class="navlinks">
-      <a href="#journey">Weekly Journey</a>
-      <a href="#tracks">Role Tracks</a>
-      <a href="#resources">Resources</a>
-      <a href="#impact">Your Impact</a>
-      <a href="#certification">Certifications</a>
-      <button class="theme-toggle" type="button" aria-pressed="true" aria-label="Switch to dark theme" title="Switch theme">
-        <span class="theme-icon" aria-hidden="true">☾</span>
-      </button>
-    </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="wrap">
-    <p class="initiative">An initiative by the Diggibyte L&amp;D team</p>
-    <h1 class="program-name">Employee Upskilling Program</h1>
-    <p class="tagline">8 weeks to build with agentic AI, not just talk about it.</p>
-    <div class="why-block">
-      <p>Every team here already knows how to build reliable systems: that is the job. What is changing is the tooling. Agentic AI is becoming a normal part of how that work gets done, not an experiment on the side. This program exists so that shift happens deliberately, with real skill behind it, instead of piecemeal and reactive.</p>
-      <p>The goal is not to make everyone an AI researcher. It is to make sure that when a customer asks if something can be faster, cheaper, or more reliable, the answer is yes, because the team building it knows how to put agents to work on real data, real pipelines, and real decisions, safely and with the right guardrails in place.</p>
-    </div>
-    <p class="lede">A hands-on program for Data Engineering, AI/ML, BI, and Platform teams. Every week ends with something working: not a slide, an artifact you actually built.</p>
-    <div class="stat-row">
-      <div class="stat"><b>8</b><span>weeks</span></div>
-      <div class="stat"><b>4–6</b><span>hrs / week</span></div>
-      <div class="stat"><b>4</b><span>role tracks</span></div>
-      <div class="stat"><b>6</b><span>impact dimensions</span></div>
-    </div>
-  </div>
-</header>
-
-<section class="journey-map">
-  <div class="wrap">
-    <h2>Program Journey</h2>
-    <p class="section-lede">A clear progression from core capability building to role-specific specialization and final proof of business impact.</p>
-
-    <div class="phase-grid">
-      <div class="phase-card">
-        <div class="phase-header">
-          <div class="phase-icon">01</div>
-          <div class="phase-weeks">Weeks 1–3</div>
-        </div>
-        <div class="phase-label">Core foundation</div>
-        <h3 class="phase-title">Learn the AI operating model</h3>
-        <p>Build the shared skills every team needs: AI-assisted work, GenAI fundamentals, and the first agent patterns behind real productivity gains.</p>
-        <a href="#journey">View core journey →</a>
+  <nav>
+    <div class="nav-inner">
+      <div class="brand">
+        <img class="brand-logo" src="assets/logo.png" alt="Diggibyte">
       </div>
-
-      <div class="phase-card">
-        <div class="phase-header">
-          <div class="phase-icon">02</div>
-          <div class="phase-weeks">Weeks 4–5</div>
-        </div>
-        <div class="phase-label">Role specialization</div>
-        <h3 class="phase-title">Apply the model in your role</h3>
-        <p>Turn the shared foundation into domain-specific outcomes across Data Engineering, AI/ML, BI, and Platform tracks.</p>
-        <a href="#tracks">Explore role tracks →</a>
-      </div>
-
-      <div class="phase-card">
-        <div class="phase-header">
-          <div class="phase-icon">03</div>
-          <div class="phase-weeks">Weeks 6–7</div>
-        </div>
-        <div class="phase-label">Production &amp; Real-World Application</div>
-        <h3 class="phase-title">Governance, eval &amp; sprint</h3>
-        <p>Bridge prototypes to production through MLflow tracing, Unity Catalog governance, guardrails, and a live customer use case sprint.</p>
-        <a href="#journey">View production phase →</a>
-      </div>
-
-      <div class="phase-card">
-        <div class="phase-header">
-          <div class="phase-icon">04</div>
-          <div class="phase-weeks">Week 8</div>
-        </div>
-        <div class="phase-label">Evaluation &amp; showcase</div>
-        <h3 class="phase-title">Demonstrate real impact</h3>
-        <p>Present working evidence, defend the design, and show measurable value across customer, delivery, governance, and knowledge-sharing dimensions.</p>
-        <a href="#impact">See impact criteria →</a>
+      <div class="navlinks">
+        <a href="#setup">Before You Start</a>
+        <a href="#journey">Weekly Journey</a>
+        <a href="#tracks">Role Tracks</a>
+        <a href="#impact">Your Impact</a>
+        <a href="#resources">Resources</a>
+        <a href="#certification">Certifications</a>
+        <button class="theme-toggle" type="button" aria-pressed="true" aria-label="Switch to dark theme" title="Switch theme">
+          <span class="theme-icon" aria-hidden="true">&#9790;</span>
+        </button>
       </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<section id="journey">
-  <div class="wrap">
-    <h2>The Weekly Journey</h2>
-    <p class="section-lede">Every week has a clear objective: learn one capability, build one working artifact, and show evidence of business value.</p>
+  <header class="hero">
+    <div class="wrap">
+      <p class="initiative">An initiative by the Diggibyte L&amp;D team</p>
+      <h1 class="program-name">Employee Upskilling Program</h1>
+      <p class="tagline">8 weeks to build with agentic AI, not just talk about it.</p>
+      <div class="why-block">
+        <p>Every team here already knows how to build reliable systems: that is the job. What is changing is the tooling. Agentic AI is becoming a normal part of how that work gets done, not an experiment on the side. This program exists so that shift happens deliberately, with real skill behind it, instead of piecemeal and reactive.</p>
+        <p>The goal is not to make everyone an AI researcher. It is to make sure that when a customer asks if something can be faster, cheaper, or more reliable, the answer is yes, because the team building it knows how to put agents to work on real data, real pipelines, and real decisions, safely and with the right guardrails in place.</p>
+      </div>
+      <p class="lede">A hands-on program for Data Engineering, AI/ML, BI, and Platform teams. Every week ends with something working: not a slide, an artifact you actually built, in a repo someone else can run.</p>
+      <div class="stat-row">
+        <div class="stat"><b>8</b><span>weeks + setup week</span></div>
+        <div class="stat"><b>5-6</b><span>hrs / week</span></div>
+        <div class="stat"><b>4</b><span>role tracks</span></div>
+        <div class="stat"><b>7</b><span>impact dimensions</span></div>
+      </div>
+    </div>
+  </header>
 
-    <div class="journey">
-      <div class="wk-section" data-week="1-3">
-        <div class="wk-step-badge">Phase 1 · Weeks 1–3</div>
-        <div class="wk-head"><span class="wk-title">Core Foundation</span><span class="wk-hours">All roles</span></div>
-        <div class="wk-body">
-          <p>These three weeks create the same baseline for everyone. By the end of Week 3, every participant has the shared AI skills needed to confidently move into a role-specific build.</p>
+  <section class="journey-map">
+    <div class="wrap">
+      <h2>Program Journey</h2>
+      <p class="section-lede">A clear progression from environment setup and core capability building, through role-specific specialization, to final proof of business impact.</p>
+      <div class="phase-grid">
+        <div class="phase-card">
+          <div class="phase-header">
+            <div class="phase-icon">00</div>
+            <div class="phase-weeks">Week 0</div>
+          </div>
+          <div class="phase-label">Setup and baseline</div>
+          <h3 class="phase-title">Get access and record your before numbers</h3>
+          <p>Environment, sandbox data, tooling, and the baseline measurements you will be judged against in Week 8. Nothing starts until this is done.</p>
+          <a href="#setup">Open the checklist &#8594;</a>
+        </div>
+        <div class="phase-card">
+          <div class="phase-header">
+            <div class="phase-icon">01</div>
+            <div class="phase-weeks">Weeks 1-3</div>
+          </div>
+          <div class="phase-label">Core foundation</div>
+          <h3 class="phase-title">Learn the AI operating model</h3>
+          <p>Build the shared skills every team needs: AI-assisted work, retrieval with measurement from day one, and the first agent patterns behind real productivity gains.</p>
+          <a href="#journey">View core journey &#8594;</a>
+        </div>
+        <div class="phase-card">
+          <div class="phase-header">
+            <div class="phase-icon">02</div>
+            <div class="phase-weeks">Weeks 4-5</div>
+          </div>
+          <div class="phase-label">Role specialization</div>
+          <h3 class="phase-title">Apply the model in your role</h3>
+          <p>Turn the shared foundation into domain-specific outcomes across Data Engineering, AI/ML, BI, and Platform tracks, against a real problem picked in Week 4.</p>
+          <a href="#tracks">Explore role tracks &#8594;</a>
+        </div>
+        <div class="phase-card">
+          <div class="phase-header">
+            <div class="phase-icon">03</div>
+            <div class="phase-weeks">Weeks 6-7</div>
+          </div>
+          <div class="phase-label">Production and real-world application</div>
+          <h3 class="phase-title">Trust, security and the sprint</h3>
+          <p>Bridge prototypes to production through evaluation, guardrails, Unity Catalog governance, an agent red-team exercise, and a live stakeholder sprint.</p>
+          <a href="#journey">View production phase &#8594;</a>
+        </div>
+        <div class="phase-card">
+          <div class="phase-header">
+            <div class="phase-icon">04</div>
+            <div class="phase-weeks">Week 8</div>
+          </div>
+          <div class="phase-label">Evaluation and showcase</div>
+          <h3 class="phase-title">Demonstrate real impact</h3>
+          <p>Present working evidence, defend the design under questioning, and show measurable value across all seven impact dimensions.</p>
+          <a href="#impact">See impact criteria &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="wk-section-block">
-            <p><strong>Week 1: AI-Native Ways of Working</strong> · ~4 hrs</p>
-            <div class="course-tags">
-              <a class="course-tag claude" href="https://academy.claude.com/courses/claude-code-101" target="_blank" rel="noopener">Claude Code 101</a>
-              <a class="course-tag claude" href="https://academy.claude.com/courses/claude-platform-101" target="_blank" rel="noopener">Claude Platform 101</a>
+  <section id="journey">
+    <div class="wrap">
+      <h2>The Weekly Journey</h2>
+      <p class="section-lede">Every week has a clear objective: learn one capability, ship one working artifact, and leave evidence behind. Artifacts live in your fork of the track starter repo and are reviewed by pull request, not by screenshot.</p>
+
+      <div class="journey">
+
+        <div class="wk-section" id="setup" data-week="0">
+          <div class="wk-step-badge">Phase 0 &#183; Week 0</div>
+          <div class="wk-head"><span class="wk-title">Setup and Baseline</span><span class="wk-hours">~2 hrs &#183; before Week 1</span></div>
+          <div class="wk-body">
+            <p>This week exists because the most common way a program like this fails is that people spend Week 1 raising access tickets and Week 8 unable to prove anything changed. Complete every item below before the cohort starts.</p>
+
+            <div class="wk-section-block">
+              <p><strong>1. Access</strong></p>
+              <ul>
+                <li>Databricks sandbox workspace, with your own Unity Catalog schema under the training catalog and a compute policy attached.</li>
+                <li>A model serving budget and an AI Gateway rate limit set against your identity, so cost is visible from day one rather than discovered in Week 6.</li>
+                <li>Claude Code seat, GitHub org membership, and a fork of your track starter repo.</li>
+                <li>Access to the Databricks managed MCP servers in the sandbox workspace.</li>
+              </ul>
             </div>
-            <ul>
-              <li><strong>Learn:</strong> prompting, context engineering, secure coding practices with AI tools.</li>
-              <li><strong>Hands-on:</strong> use an AI coding assistant in your IDE on a real backlog item; try MCP in VS Code, local Codex workflows, or Claude Code, and compare how tool access changes the quality of outputs.</li>
-              <li><strong>Build:</strong> use an AI coding assistant on one real backlog task this week.</li>
-              <li><strong>Evaluated by:</strong> this feeds the "AI awareness and adoption" impact dimension in Week 8.</li>
-            </ul>
-          </div>
 
-          <div class="wk-section-block">
-            <p><strong>Week 2: GenAI &amp; RAG Foundations</strong> · ~5 hrs</p>
-            <div class="course-tags">
-              <a class="course-tag databricks" href="https://partner-academy.databricks.com/learn/courses/5786/building-rag-agents-with-agent-bricks/sessions/22162/B5QNWM4" target="_blank" rel="noopener">Building RAG Agents</a>
+            <div class="wk-section-block">
+              <p><strong>2. Toolchain install</strong></p>
+              <ul>
+                <li>Databricks CLI, authenticated to the sandbox workspace.</li>
+                <li>Databricks AI Dev Kit: the MCP server plus the Databricks agent skills, installed into your IDE agent.</li>
+                <li>Databricks Asset Bundles validated locally against the starter repo, so everything you build this program is deployable from the start.</li>
+              </ul>
             </div>
-            <ul>
-              <li><strong>Learn:</strong> LLM/GenAI basics, embeddings, RAG, structured outputs, and model selection.</li>
-              <li><strong>Build:</strong> a basic RAG application over an internal document set.</li>
-              <li><strong>Evaluated by:</strong> this RAG app becomes the base you build on in Weeks 4–5; keep it and improve it.</li>
-            </ul>
-          </div>
 
-          <div class="wk-section-block">
-            <p><strong>Week 3: Agent Architecture &amp; Tooling</strong> · ~5–6 hrs</p>
-            <div class="course-tags">
-              <a class="course-tag claude" href="https://academy.claude.com/courses/introduction-to-model-context-protocol" target="_blank" rel="noopener">MCP Intro</a>
-              <a class="course-tag claude" href="https://academy.claude.com/courses/model-context-protocol-advanced-topics" target="_blank" rel="noopener">MCP Advanced</a>
-              <a class="course-tag databricks" href="https://partner-academy.databricks.com/learn/courses/5785/building-agentic-applications-on-databricks" target="_blank" rel="noopener">Databricks Agentic Apps</a>
+            <div class="wk-section-block">
+              <p><strong>3. Data rules</strong></p>
+              <ul>
+                <li>Each track has one approved sandbox dataset. Use it.</li>
+                <li>No customer data, customer documents, customer credentials, or customer source code goes into any prompt, notebook, repo, or model endpoint at any point in this program, regardless of which model or tool is being used.</li>
+                <li>If your Week 7 use case needs customer context, it is replaced with the synthetic equivalent or the use case is changed. This is not negotiable and is checked at review.</li>
+              </ul>
             </div>
-            <ul>
-              <li><strong>Learn:</strong> agent design patterns, tool calling, MCP, memory, and human-in-the-loop controls.</li>
-              <li><strong>Hands-on:</strong> connect an agent to local or cloud tools using MCP; include a Databricks Genie or service connection in the flow so the agent can read context from your environment instead of acting in a vacuum.</li>
-              <li><strong>Build:</strong> your first agent that calls at least 3 tools.</li>
-              <li><strong>Evaluated by:</strong> this agent becomes the foundation you specialize into your role's assignment next.</li>
-            </ul>
+
+            <div class="wk-section-block">
+              <p><strong>4. Baseline capture</strong></p>
+              <ul>
+                <li>Record the before numbers for the task you intend to improve: hours per week spent on it, defects caught in review over the last four sprints, and typical turnaround time.</li>
+                <li>Commit these to <code>baseline.md</code> in your fork in Week 0. Week 8 impact is measured against this file. There is no way to reconstruct it later.</li>
+              </ul>
+            </div>
+
+            <div class="wk-section-block">
+              <p><strong>5. Time commitment</strong></p>
+              <ul>
+                <li>Confirm with your reporting manager that 5 to 6 hours per week are protected and booked against the L&amp;D code.</li>
+                <li>If delivery pressure takes a week from you, tell your track mentor the same week. One week can be recovered; three cannot.</li>
+              </ul>
+            </div>
           </div>
+          <div class="outcome"><b>Week 0 outcome:</b> a working environment, an approved dataset, and a committed <code>baseline.md</code>. Participants without all three do not start Week 1.</div>
         </div>
-        <div class="outcome"><b>Phase outcome:</b> everyone finishes with three working artifacts — an AI-assisted task, a RAG app, and a 3-tool agent.</div>
-      </div>
 
-      <div class="wk-section" data-week="4-5">
-        <div class="wk-step-badge">Phase 2 · Weeks 4–5</div>
-        <div class="wk-head"><span class="wk-title">Role Specialization</span><span class="wk-hours">Your role track</span></div>
-        <div class="wk-body">
-          <p>Weeks 4–5 are where the program becomes specific to what a Data Engineer, BI Engineer, Data Scientist, or Platform Engineer actually needs to deliver.</p>
+        <div class="wk-section" data-week="1-3">
+          <div class="wk-step-badge">Phase 1 &#183; Weeks 1-3</div>
+          <div class="wk-head"><span class="wk-title">Core Foundation</span><span class="wk-hours">All roles</span></div>
+          <div class="wk-body">
+            <p>These three weeks create the same baseline for everyone. By the end of Week 3, every participant has the shared AI skills needed to confidently move into a role-specific build, and has measured their own work at least once.</p>
 
-          <div class="wk-section-block">
-            <p><strong>Week 4: Track Deep Dive</strong></p>
-            <ul>
-              <li><strong>Learn:</strong> the domain-specific patterns for your role: pipelines for DE, semantic modeling for BI, orchestration for DS, or governance + platform patterns for Platform.</li>
-              <li><strong>Course:</strong> use the role-specific learning path linked in the track cards below.</li>
-              <li><strong>Build:</strong> design the architecture for the Week 5 assignment.</li>
-            </ul>
+            <div class="wk-section-block">
+              <p><strong>Week 1: AI-Native Ways of Working</strong> &#183; ~5 hrs</p>
+              <div class="course-tags">
+                <a class="course-tag claude" href="https://academy.claude.com/courses/claude-code-101" target="_blank" rel="noopener">Claude Code 101</a>
+                <a class="course-tag claude" href="https://academy.claude.com/courses/claude-platform-101" target="_blank" rel="noopener">Claude Platform 101</a>
+              </div>
+              <ul>
+                <li><strong>Learn:</strong> prompting, context engineering, secure coding practices with AI tools, and what must never be pasted into a model.</li>
+                <li><strong>Hands-on:</strong> connect the Databricks AI Dev Kit MCP server to your IDE agent, then run the same real backlog task twice: once without tool access, once with. Record what changed in the output quality.</li>
+                <li><strong>Ship:</strong> one merged pull request authored with an AI assistant, plus a short note in the repo on where the assistant helped and where it was confidently wrong.</li>
+                <li><strong>Cost:</strong> record your week-1 token and DBU spend. You will need the trend line in Week 8.</li>
+                <li><strong>Evidence for:</strong> AI adoption and enablement.</li>
+              </ul>
+            </div>
+
+            <div class="wk-section-block">
+              <p><strong>Week 2: Retrieval and Evaluation</strong> &#183; ~6 hrs</p>
+              <div class="course-tags">
+                <a class="course-tag databricks" href="https://partner-academy.databricks.com/learn/courses/5786/building-rag-agents-with-agent-bricks" target="_blank" rel="noopener">Building RAG Agents</a>
+              </div>
+              <ul>
+                <li><strong>Learn:</strong> embeddings, chunking, Databricks AI Search, Agent Bricks Knowledge Assistant, structured outputs, and model selection.</li>
+                <li><strong>Build:</strong> a retrieval application over the approved sandbox document set.</li>
+                <li><strong>Build, not optional:</strong> a 15-question evaluation set with expected answers, scored in MLflow 3 <em>before</em> you tune anything. Retrieval that is not measured is a demo, not an engineering artifact.</li>
+                <li><strong>Ship:</strong> repo containing the app, the eval set, and the first eval run with its baseline score.</li>
+                <li><strong>Evidence for:</strong> technical defense.</li>
+              </ul>
+            </div>
+
+            <div class="wk-section-block">
+              <p><strong>Week 3: Agents, Tools and Memory</strong> &#183; ~6 hrs</p>
+              <div class="course-tags">
+                <a class="course-tag claude" href="https://academy.claude.com/courses/introduction-to-model-context-protocol" target="_blank" rel="noopener">MCP Intro</a>
+                <a class="course-tag claude" href="https://academy.claude.com/courses/model-context-protocol-advanced-topics" target="_blank" rel="noopener">MCP Advanced</a>
+                <a class="course-tag databricks" href="https://partner-academy.databricks.com/learn/courses/5785/building-agentic-applications-on-databricks" target="_blank" rel="noopener">Databricks Agentic Apps</a>
+              </div>
+              <ul>
+                <li><strong>Learn:</strong> agent design patterns, tool calling, MCP, state and memory with Lakebase, and human-in-the-loop controls.</li>
+                <li><strong>Build:</strong> an agent that calls at least three tools, of which one is a Unity Catalog function and one is a Databricks managed MCP server, so the agent reads real context from your environment instead of acting in a vacuum.</li>
+                <li><strong>Build:</strong> put one write-capable or destructive action behind an explicit approval gate. An agent that can change state without a gate does not pass review.</li>
+                <li><strong>Ship:</strong> the agent plus MLflow traces showing the tool path for three real questions.</li>
+                <li><strong>Evidence for:</strong> technical defense, governance and security.</li>
+              </ul>
+            </div>
           </div>
-
-          <div class="wk-section-block">
-            <p><strong>Week 5: Role Agent Implementation</strong></p>
-            <ul>
-              <li><strong>Build:</strong> the working, role-specific agent defined in your track.</li>
-              <li><strong>Evaluate:</strong> this is the artifact you carry into Weeks 6–8; it does not get rebuilt later, only strengthened.</li>
-            </ul>
-          </div>
+          <div class="outcome"><b>Phase outcome:</b> three working artifacts in a repo - an AI-assisted merged PR, a measured retrieval app, and a gated 3-tool agent with traces.</div>
         </div>
-        <div class="outcome"><b>Phase outcome:</b> a working agent that solves a real problem in your domain, not a generic exercise.</div>
-      </div>
 
-      <div class="wk-section" data-week="6-7">
-        <div class="wk-step-badge">Phase 3 · Weeks 6–7</div>
-        <div class="wk-head"><span class="wk-title">Production &amp; Real-World Application</span><span class="wk-hours">Shared process</span></div>
-        <div class="wk-body">
-          <p>This is where the work becomes trustworthy, measurable, and useful outside a lab. The goal is not a demo; it is a governed system that solves a real stakeholder problem.</p>
+        <div class="wk-section" data-week="4-5">
+          <div class="wk-step-badge">Phase 2 &#183; Weeks 4-5</div>
+          <div class="wk-head"><span class="wk-title">Role Specialization</span><span class="wk-hours">Your role track</span></div>
+          <div class="wk-body">
+            <p>Weeks 4 and 5 are where the program becomes specific to what a Data Engineer, BI Engineer, Data Scientist, or Platform Engineer actually needs to deliver. The real problem is chosen here, in Week 4, not in Week 7, so that nothing gets rebuilt later.</p>
 
-          <div class="wk-section-block">
-            <p><strong>Week 6: Production Agent Engineering</strong> · ~5 hrs</p>
-            <ul>
-              <li><strong>Learn:</strong> evaluation methodology, guardrails, Unity Catalog access, MLflow tracing, cost and latency control.</li>
-              <li><strong>Course:</strong> Agent evaluations, MLflow tracing, and Unity Catalog governance.</li>
-              <li><strong>Build:</strong> add an evaluation report, guardrails, and a cost/latency view to your Week 5 agent.</li>
-              <li><strong>Evaluated by:</strong> this directly produces your "Governance contribution" evidence for Week 8.</li>
-            </ul>
+            <div class="wk-section-block">
+              <p><strong>Week 4: Design and Use Case Selection</strong> &#183; ~5 hrs</p>
+              <ul>
+                <li><strong>Learn:</strong> the domain patterns for your role, listed in your track card below.</li>
+                <li><strong>Do:</strong> pick your Week 7 problem now, from the curated use case backlog, with the manager or PM who owns it. Get their agreement in writing that they will spend 30 minutes with you in Week 7.</li>
+                <li><strong>Build:</strong> a one-page design covering tools, data sources, auth model, failure modes, approval gates, eval criteria, and a cost ceiling.</li>
+                <li><strong>Gate:</strong> your track mentor reviews the design before you write implementation code. No design review, no Week 5.</li>
+              </ul>
+            </div>
+
+            <div class="wk-section-block">
+              <p><strong>Week 5: Role Agent Implementation</strong> &#183; ~6 hrs</p>
+              <ul>
+                <li><strong>Build:</strong> the working, role-specific agent from your Week 4 design, aimed at the real problem you chose.</li>
+                <li><strong>Ship:</strong> agent deployed to the sandbox through Databricks Asset Bundles, from the repo, not from the workspace UI.</li>
+                <li><strong>Definition of done:</strong> it runs end to end unattended, it is deployable by someone else with <code>databricks bundle deploy</code>, and the eval set from Week 2 has been extended to cover it.</li>
+                <li><strong>Evaluate:</strong> this is the artifact you carry into Weeks 6-8. It does not get rebuilt later, only strengthened.</li>
+              </ul>
+            </div>
           </div>
-
-          <div class="wk-section-block">
-            <p><strong>Week 7: Customer / Team Use Case Sprint</strong> · ~5–6 hrs</p>
-            <ul>
-              <li><strong>Do:</strong> pick one real, currently unsolved problem with a manager or PM and apply your agent to it.</li>
-              <li><strong>Build:</strong> a working accelerator a real stakeholder has confirmed helps them.</li>
-              <li><strong>Evaluated by:</strong> this produces your "Customer value" and "Delivery improvement" evidence.</li>
-            </ul>
-          </div>
+          <div class="outcome"><b>Phase outcome:</b> a deployable agent that solves a named stakeholder's real problem, not a generic exercise.</div>
         </div>
-        <div class="outcome"><b>Phase outcome:</b> your agent is now trustworthy, measured, and validated against a real problem, not a prototype-only demo.</div>
-      </div>
 
-      <div class="wk-section" data-week="8">
-        <div class="wk-step-badge">Phase 4 · Week 8</div>
-        <div class="wk-head"><span class="wk-title">Evaluation &amp; Showcase</span><span class="wk-hours">Final proof</span></div>
-        <div class="wk-body">
-          <p>Week 8 is where you present the evidence that your work matters. This is not an attendance check; it is a demonstration of impact and technical judgment.</p>
-          <div class="wk-section-block">
-            <ul>
-              <li><strong>Do:</strong> deliver a live 10–15 minute demo of your working system — no slides, no screenshots.</li>
-              <li><strong>Present evidence for all six impact dimensions:</strong> customer value, delivery improvement, AI awareness/adoption, governance/cost, knowledge sharing, and technical defense of your design choices.</li>
-              <li><strong>Outcome:</strong> certification tier assigned based on demonstrated impact, not attendance.</li>
-            </ul>
+        <div class="wk-section" data-week="6-7">
+          <div class="wk-step-badge">Phase 3 &#183; Weeks 6-7</div>
+          <div class="wk-head"><span class="wk-title">Production and Real-World Application</span><span class="wk-hours">Shared process</span></div>
+          <div class="wk-body">
+            <p>This is where the work becomes trustworthy, measurable, and useful outside a lab. The goal is not a demo; it is a governed system that solves a real stakeholder problem and survives someone trying to break it.</p>
+
+            <div class="wk-section-block">
+              <p><strong>Week 6: Trust, Security and Cost</strong> &#183; ~6 hrs</p>
+              <div class="course-tags">
+                <a class="course-tag databricks" href="https://partner-academy.databricks.com/learn/courses/5784/deploying-and-monitoring-agent-applications-on-databricks" target="_blank" rel="noopener">Deploy &amp; Monitor</a>
+              </div>
+              <ul>
+                <li><strong>Learn:</strong> LLM judges and evaluation methodology, guardrails, Unity Catalog permissions and lineage for agent tools, PII handling, MLflow 3 tracing, AI Gateway rate limiting and model routing, and cost attribution.</li>
+                <li><strong>Build:</strong> expand the eval set to 30 cases including adversarial ones; add guardrails; run the agent under a least-privilege service principal scoped in Unity Catalog; add a cost and latency view.</li>
+                <li><strong>Red team, in pairs:</strong> swap agents with another participant and try to make theirs leak data it should not return, call a tool outside its scope, or follow instructions planted inside a retrieved document. Write up what you found, then fix what was found in yours.</li>
+                <li><strong>Why this is here:</strong> we deploy agents against customer data for a living. Prompt injection, over-broad tool scopes, and secrets in prompts are the failure modes that end engagements, and they are the ones nobody practises.</li>
+                <li><strong>Evidence for:</strong> governance and security, cost control.</li>
+              </ul>
+            </div>
+
+            <div class="wk-section-block">
+              <p><strong>Week 7: Stakeholder Sprint</strong> &#183; ~6 hrs</p>
+              <ul>
+                <li><strong>Do:</strong> run your agent against the problem you picked in Week 4, with the stakeholder in the loop, not as an observer at the end.</li>
+                <li><strong>Ship:</strong> measured before-and-after against <code>baseline.md</code>, plus written confirmation from the stakeholder that it helped.</li>
+                <li><strong>Ship:</strong> a handover README complete enough that another engineer can run the agent without asking you a single question. This is tested literally: a peer clones it and runs it.</li>
+                <li><strong>Evidence for:</strong> stakeholder value, delivery improvement, knowledge sharing.</li>
+              </ul>
+            </div>
           </div>
+          <div class="outcome"><b>Phase outcome:</b> your agent is measured, hardened against a real attempt to break it, and validated by the person whose problem it solves.</div>
         </div>
-        <div class="outcome"><b>Outcome:</b> a credible, measurable demo backed by artifacts, design decisions, and real stakeholder value.</div>
+
+        <div class="wk-section" data-week="8">
+          <div class="wk-step-badge">Phase 4 &#183; Week 8</div>
+          <div class="wk-head"><span class="wk-title">Review and Showcase</span><span class="wk-hours">Final proof</span></div>
+          <div class="wk-body">
+            <p>Week 8 is where you present the evidence that your work matters. This is not an attendance check; it is a demonstration of impact and technical judgment.</p>
+
+            <div class="wk-section-block">
+              <p><strong>Submit 48 hours before your slot</strong></p>
+              <ul>
+                <li>Repository link, <code>baseline.md</code> and the after numbers, eval report, sample MLflow traces, cost and latency view, red-team findings and fixes, stakeholder confirmation, and the handover README.</li>
+                <li>Reviewers read the evidence pack before the session. The demo is for the things a document cannot show.</li>
+              </ul>
+            </div>
+
+            <div class="wk-section-block">
+              <p><strong>On the day</strong></p>
+              <ul>
+                <li><strong>Do:</strong> a live 15 minute session - 10 minutes running the real system, 5 minutes of questions. No slides, no screenshots, no recordings.</li>
+                <li><strong>Defend:</strong> model selection, tool boundaries, what happens when it fails, what you would build differently with another two weeks.</li>
+                <li><strong>Outcome:</strong> a recognition tier assigned on demonstrated impact, not attendance.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="outcome"><b>Outcome:</b> a credible, measurable demo backed by artifacts, design decisions, and real stakeholder value.</div>
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="tracks">
-  <div class="wrap">
-    <h2>Weeks 4–5 · Role Tracks</h2>
-    <p class="section-lede">Same two weeks, different destination. Pick the track that matches your role and the outcome you need to ship.</p>
+  <section id="tracks">
+    <div class="wrap">
+      <h2>Weeks 4-5 &#183; Role Tracks</h2>
+      <p class="section-lede">Same two weeks, different destination. Pick the track that matches your role and the outcome you need to ship.</p>
 
-    <div class="role-grid">
-
-      <div class="role-card" style="grid-column: 1 / -1; background: rgba(59,130,246,.06); border: 1px solid rgba(59,130,246,.25);">
-        <div class="role-card-head">
-          <span class="role-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2v20"/>
-              <path d="M4 6h16"/>
-              <path d="M4 18h16"/>
-            </svg>
-          </span>
-          <div>
-            <div class="role-name">Mandatory Toolchain</div>
-            <div class="role-sub">Databricks AI Dev Toolkit + MCP + IDE agent workflows</div>
+      <div class="role-grid">
+        <div class="role-card" style="grid-column: 1 / -1; background: rgba(59,130,246,.06); border: 1px solid rgba(59,130,246,.25);">
+          <div class="role-card-head">
+            <span class="role-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20"/>
+                <path d="M4 6h16"/>
+                <path d="M4 18h16"/>
+              </svg>
+            </span>
+            <div>
+              <div class="role-name">Shared Toolchain</div>
+              <div class="role-sub">Every track, no exceptions</div>
+            </div>
+          </div>
+          <div class="role-card-body">
+            <p>All four tracks, Platform included, use the same toolchain so that work is portable between people and reviewable by anyone. Set this up in Week 0.</p>
+            <div class="assignment"><b>Mandatory:</b> Databricks AI Dev Kit - the MCP server plus the Databricks agent skills, installed into your IDE agent; MCP configured in VS Code, Claude Code or equivalent; Databricks CLI and Asset Bundles; MLflow 3 tracing on every agent run; and the governance module for whichever model provider your stack uses.</div>
+            <div class="assignment"><b>Where it lives:</b> <a href="https://github.com/databricks-solutions/ai-dev-kit" target="_blank" rel="noopener">databricks-solutions/ai-dev-kit</a> and the <a href="https://docs.databricks.com/aws/en/generative-ai/agent-framework/mcp" target="_blank" rel="noopener">MCP on Databricks documentation</a>. It is a toolkit you install and use every week, not a course you complete once.</div>
           </div>
         </div>
-        <div class="role-card-body">
-          <p>All Data Engineers, Data Scientists, and BI Engineers should complete the Databricks AI Dev Toolkit, learn MCP in VS Code or a coding agent, and understand how to connect Databricks Genie, services, or internal tools from the IDE.</p>
-          <div class="assignment"><b>Mandatory:</b> Databricks AI Dev Toolkit; MCP for VS Code or equivalent IDE tooling; either OpenAI or Anthropic governance training based on the model stack being used.</div>
-        </div>
-      </div>
 
-      <!-- Data Engineers -->
-      <div class="role-card">
-        <div class="role-card-head">
-          <span class="role-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <ellipse cx="12" cy="5" rx="8" ry="3"/>
-              <path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/>
-              <path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/>
-            </svg>
-          </span>
-          <div>
-            <div class="role-name">Data Engineers</div>
-            <div class="role-sub">→ Agentic Data Engineers</div>
+        <!-- Data Engineers -->
+        <div class="role-card">
+          <div class="role-card-head">
+            <span class="role-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="8" ry="3"/>
+                <path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/>
+                <path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/>
+              </svg>
+            </span>
+            <div>
+              <div class="role-name">Data Engineers</div>
+              <div class="role-sub">&#8594; Agentic Data Engineers</div>
+            </div>
           </div>
-        </div>
-        <div class="role-card-body">
-          <h4>What you will learn</h4>
-          <ul>
-            <li>MCP / tool development</li>
-            <li>RAG data pipelines</li>
-            <li>Structured + unstructured ingestion</li>
-            <li>Metadata &amp; context engineering</li>
-            <li>Lakeflow, Delta &amp; Unity Catalog</li>
-            <li>Automated data-quality agents</li>
-          </ul>
-
-          <details class="good-look">
-            <summary>What good looks like</summary>
+          <div class="role-card-body">
+            <h4>What you will learn</h4>
             <ul>
-              <li>You can connect an agent to real data sources and tools without losing control of the workflow.</li>
-              <li>Your agent detects pipeline issues, explains likely root cause, and recommends or executes the right remediation.</li>
-              <li>You understand lineage, quality checks, access boundaries, and the cost of each action.</li>
+              <li>MCP and tool development</li>
+              <li>Lakeflow Connect and Spark Declarative Pipelines</li>
+              <li>Structured and unstructured ingestion</li>
+              <li>Metadata, lineage and context engineering</li>
+              <li>Unity Catalog governance and data quality expectations</li>
+              <li>Automated data-quality agents</li>
             </ul>
-          </details>
-
-          <div class="assignment"><b>Mandatory:</b> Databricks AI Dev Toolkit, MCP for VS Code, and local coding agent workflows.</div>
-          <div class="assignment"><b>Course:</b> Databricks Lakeflow docs, Unity Catalog governance, and agent tooling.</div>
-          <div class="assignment"><b>Build:</b> an Autonomous Data Pipeline Agent that detects issues, diagnoses root cause, checks lineage and quality, and recommends or safely executes remediation.</div>
-          <div class="assignment"><b>Evaluate:</b> did the agent act on the right signal, reduce manual triage, and explain the decision path clearly?</div>
-        </div>
-      </div>
-
-      <!-- Data Scientists -->
-      <div class="role-card">
-        <div class="role-card-head">
-          <span class="role-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9.5 2a3.5 3.5 0 0 0-3.5 3.5c0 .3 0 .6.1.9A3 3 0 0 0 5 12a3 3 0 0 0 1.5 5.4V19a3 3 0 0 0 3 3"/>
-              <path d="M14.5 2a3.5 3.5 0 0 1 3.5 3.5c0 .3 0 .6-.1.9A3 3 0 0 1 19 12a3 3 0 0 1-1.5 5.4V19a3 3 0 0 1-3 3"/>
-              <path d="M9.5 8.5a2 2 0 1 1 4 0v9a2 2 0 1 1-4 0"/>
-            </svg>
-          </span>
-          <div>
-            <div class="role-name">Data Scientists</div>
-            <div class="role-sub">→ Agentic AI Engineers</div>
+            <details class="good-look">
+              <summary>What good looks like</summary>
+              <ul>
+                <li>You can connect an agent to real data sources and tools without losing control of the workflow.</li>
+                <li>Your agent detects pipeline issues, explains likely root cause, and proposes remediation that a human approves before it runs.</li>
+                <li>You understand lineage, quality checks, access boundaries, and the cost of each action.</li>
+              </ul>
+            </details>
+            <div class="assignment"><b>Mandatory:</b> shared toolchain, plus Unity Catalog lineage and Lakeflow Jobs run history as agent tools.</div>
+            <div class="assignment"><b>Build:</b> a pipeline triage agent that detects failures, reads lineage and quality results, diagnoses likely root cause, and proposes remediation. Any action that writes or repairs runs only behind an approval gate.</div>
+            <div class="assignment"><b>Evaluate:</b> did the agent act on the right signal, reduce manual triage time against your baseline, and explain the decision path clearly?</div>
           </div>
         </div>
-        <div class="role-card-body">
-          <h4>What you will learn</h4>
-          <ul>
-            <li>Advanced RAG, embeddings &amp; reranking</li>
-            <li>Tool calling &amp; memory</li>
-            <li>Agent orchestration, multi-agent patterns</li>
-            <li>Model selection</li>
-            <li>Evaluation &amp; hallucination testing</li>
-            <li>Guardrails &amp; MLflow</li>
-          </ul>
 
-          <details class="good-look">
-            <summary>What good looks like</summary>
+        <!-- Data Scientists -->
+        <div class="role-card">
+          <div class="role-card-head">
+            <span class="role-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9.5 2a3.5 3.5 0 0 0-3.5 3.5c0 .3 0 .6.1.9A3 3 0 0 0 5 12a3 3 0 0 0 1.5 5.4V19a3 3 0 0 0 3 3"/>
+                <path d="M14.5 2a3.5 3.5 0 0 1 3.5 3.5c0 .3 0 .6-.1.9A3 3 0 0 1 19 12a3 3 0 0 1-1.5 5.4V19a3 3 0 0 1-3 3"/>
+                <path d="M9.5 8.5a2 2 0 1 1 4 0v9a2 2 0 1 1-4 0"/>
+              </svg>
+            </span>
+            <div>
+              <div class="role-name">Data Scientists</div>
+              <div class="role-sub">&#8594; Agentic AI Engineers</div>
+            </div>
+          </div>
+          <div class="role-card-body">
+            <h4>What you will learn</h4>
             <ul>
-              <li>Your agent answers real business questions with grounded evidence and clear reasoning.</li>
-              <li>You can validate model output against source facts and explain the answer path.</li>
-              <li>Your workflow is measurable: accuracy, grounding, explainability, and usefulness all matter.</li>
+              <li>Databricks AI Search, embeddings and reranking</li>
+              <li>Tool calling and memory with Lakebase</li>
+              <li>Mosaic AI Agent Framework and multi-agent patterns</li>
+              <li>Model selection and routing</li>
+              <li>Evaluation, LLM judges and hallucination testing</li>
+              <li>Guardrails and MLflow 3</li>
             </ul>
-          </details>
-
-          <div class="assignment"><b>Mandatory:</b> Databricks AI Dev Toolkit, MCP for IDE tooling, and service access patterns using Databricks Genie or connected tools.</div>
-          <div class="assignment"><b>Course:</b> advanced RAG, agent evals, and MLflow tracing.</div>
-          <div class="assignment"><b>Build:</b> a multi-agent business analyst: planner, researcher/data agent, reasoning/analysis agent, and validation agent.</div>
-          <div class="assignment"><b>Evaluate:</b> how accurate, grounded, and explainable was the final answer under real business questions?</div>
-        </div>
-      </div>
-
-      <!-- BI Engineers -->
-      <div class="role-card">
-        <div class="role-card-head">
-          <span class="role-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="4" y1="20" x2="20" y2="20"/>
-              <rect x="6" y="12" width="3" height="8"/>
-              <rect x="11" y="7" width="3" height="13"/>
-              <rect x="16" y="4" width="3" height="16"/>
-            </svg>
-          </span>
-          <div>
-            <div class="role-name">BI Engineers</div>
-            <div class="role-sub">→ AI/BI Engineers</div>
+            <details class="good-look">
+              <summary>What good looks like</summary>
+              <ul>
+                <li>Your agent answers real business questions with grounded evidence and clear reasoning.</li>
+                <li>You can validate model output against source facts and explain the answer path.</li>
+                <li>Your workflow is measurable: accuracy, grounding, explainability, and usefulness all have numbers attached.</li>
+              </ul>
+            </details>
+            <div class="assignment"><b>Mandatory:</b> shared toolchain, plus a Genie space or Unity Catalog functions exposed as agent tools.</div>
+            <div class="assignment"><b>Build:</b> a multi-agent business analyst - planner, researcher or data agent, reasoning agent, and a validation agent that can reject the answer.</div>
+            <div class="assignment"><b>Evaluate:</b> scored against your 30-case eval set, how accurate, grounded and explainable is the final answer on real business questions?</div>
           </div>
         </div>
-        <div class="role-card-body">
-          <h4>What you will learn</h4>
-          <ul>
-            <li>Semantic modeling &amp; trusted metrics</li>
-            <li>Genie / AI-BI</li>
-            <li>NL → SQL validation</li>
-            <li>Conversational analytics</li>
-            <li>Proactive insight generation</li>
-            <li>Action-oriented analytical agents</li>
-          </ul>
 
-          <details class="good-look">
-            <summary>What good looks like</summary>
+        <!-- BI Engineers -->
+        <div class="role-card">
+          <div class="role-card-head">
+            <span class="role-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" y1="20" x2="20" y2="20"/>
+                <rect x="6" y="12" width="3" height="8"/>
+                <rect x="11" y="7" width="3" height="13"/>
+                <rect x="16" y="4" width="3" height="16"/>
+              </svg>
+            </span>
+            <div>
+              <div class="role-name">BI Engineers</div>
+              <div class="role-sub">&#8594; AI/BI Engineers</div>
+            </div>
+          </div>
+          <div class="role-card-body">
+            <h4>What you will learn</h4>
             <ul>
-              <li>Your agent can answer a business question in plain language and connect the answer to trusted metrics.</li>
-              <li>The answer explains the business story instead of only showing a chart or table.</li>
-              <li>A stakeholder can trust the result without needing a data analyst to validate every step.</li>
+              <li>Unity Catalog metric views and trusted metrics</li>
+              <li>Genie spaces and AI/BI dashboards</li>
+              <li>Natural language to SQL validation</li>
+              <li>Conversational analytics</li>
+              <li>Proactive insight generation</li>
+              <li>Action-oriented analytical agents</li>
             </ul>
-          </details>
-
-          <div class="assignment"><b>Mandatory:</b> Databricks AI Dev Toolkit, GenAI-enabled BI workflows, and MCP / IDE connectivity for data and service access.</div>
-          <div class="assignment"><b>Course:</b> semantic modeling, AI-BI patterns, and natural-language analytics workflows.</div>
-          <div class="assignment"><b>Build:</b> an agent that answers questions like "Why did gross margin decline?" by investigating drivers, explaining the trend, and recommending next steps.</div>
-          <div class="assignment"><b>Evaluate:</b> could a business stakeholder trust the answer without needing a data analyst to validate every step?</div>
-        </div>
-      </div>
-
-      <!-- Platform Engineers -->
-      <div class="role-card">
-        <div class="role-card-head">
-          <span class="role-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="4" width="18" height="6" rx="1"/>
-              <rect x="3" y="14" width="18" height="6" rx="1"/>
-              <circle cx="7" cy="7" r=".6" fill="currentColor" stroke="none"/>
-              <circle cx="7" cy="17" r=".6" fill="currentColor" stroke="none"/>
-            </svg>
-          </span>
-          <div>
-            <div class="role-name">Platform Engineers</div>
-            <div class="role-sub">→ Agentic Platform Engineers</div>
+            <details class="good-look">
+              <summary>What good looks like</summary>
+              <ul>
+                <li>Your agent can answer a business question in plain language and tie the answer back to a governed metric definition.</li>
+                <li>The answer explains the business story instead of only showing a chart or table.</li>
+                <li>A stakeholder can trust the result without needing a data analyst to validate every step.</li>
+              </ul>
+            </details>
+            <div class="assignment"><b>Mandatory:</b> shared toolchain, plus at least one Unity Catalog metric view backing the agent's numbers.</div>
+            <div class="assignment"><b>Build:</b> an agent that answers questions like "why did gross margin decline?" by investigating drivers, explaining the trend, and recommending next steps. Every number it returns must name the metric view it came from.</div>
+            <div class="assignment"><b>Evaluate:</b> could a business stakeholder trust the answer without needing a data analyst to validate every step?</div>
           </div>
         </div>
-        <div class="role-card-body">
-          <h4>What you will learn</h4>
-          <ul>
-            <li>Model serving &amp; AI Gateway</li>
-            <li>MCP infrastructure</li>
-            <li>Identity &amp; authorization</li>
-            <li>Unity Catalog governance &amp; secrets</li>
-            <li>CI/CD, tracing &amp; observability</li>
-            <li>Model routing, cost management, AgentOps</li>
-          </ul>
 
-          <details class="good-look">
-            <summary>What good looks like</summary>
+        <!-- Platform Engineers -->
+        <div class="role-card">
+          <div class="role-card-head">
+            <span class="role-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="6" rx="1"/>
+                <rect x="3" y="14" width="18" height="6" rx="1"/>
+                <circle cx="7" cy="7" r=".6" fill="currentColor" stroke="none"/>
+                <circle cx="7" cy="17" r=".6" fill="currentColor" stroke="none"/>
+              </svg>
+            </span>
+            <div>
+              <div class="role-name">Platform Engineers</div>
+              <div class="role-sub">&#8594; Agentic Platform Engineers</div>
+            </div>
+          </div>
+          <div class="role-card-body">
+            <h4>What you will learn</h4>
             <ul>
-              <li>Your solution is secure, observable, and ready for real team adoption.</li>
-              <li>You can explain access boundaries, model routing, logging, and operational guardrails.</li>
-              <li>You have built something reusable that helps other teams ship AI workflows more safely and consistently.</li>
+              <li>Mosaic AI Model Serving and AI Gateway</li>
+              <li>Managed and custom MCP servers on Databricks Apps</li>
+              <li>Identity, service principals and on-behalf-of authorization</li>
+              <li>Unity Catalog governance and secrets</li>
+              <li>Asset Bundles, CI/CD, tracing and observability</li>
+              <li>Model routing, cost attribution and agent operations</li>
             </ul>
-          </details>
+            <details class="good-look">
+              <summary>What good looks like</summary>
+              <ul>
+                <li>Your solution is secure, observable, and ready for real team adoption.</li>
+                <li>You can explain access boundaries, model routing, logging, and operational guardrails.</li>
+                <li>You have built something reusable that helps other teams ship AI workflows more safely and consistently.</li>
+              </ul>
+            </details>
+            <div class="assignment"><b>Mandatory:</b> shared toolchain, plus a custom MCP server hosted as a Databricks App and a least-privilege service principal model.</div>
+            <div class="assignment"><b>Build:</b> a reusable Agent Platform Blueprint, shipped as an Asset Bundle another Diggibyte team can deploy with one command, covering serving, gateway limits, tracing, secrets and cost attribution.</div>
+            <div class="assignment"><b>Evaluate:</b> did another track actually deploy it, and does it keep model cost and access under control when they do?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="assignment"><b>Course:</b> model serving, governance, and secure platform architecture for autonomous tools.</div>
-          <div class="assignment"><b>Build:</b> a reusable Agent Platform Blueprint that other Diggibyte teams can deploy against.</div>
-          <div class="assignment"><b>Evaluate:</b> does the solution scale securely, remain observable, and keep model cost and access under control?</div>
+  <section id="impact">
+    <div class="wrap">
+      <h2>Demonstrating Your Impact</h2>
+      <p class="section-lede">Week 8 is not a scored exam. You show real, evidence-based impact across seven dimensions, reviewed live. Each dimension has a named artifact so there is no ambiguity about what counts.</p>
+
+      <table class="tier-table">
+        <tr><th>Dimension</th><th>What you must show</th><th>Evidence artifact</th></tr>
+        <tr>
+          <td>Stakeholder value delivered</td>
+          <td>A clear before and after picture: what changed for a customer or internal stakeholder because of what you built, in plain terms a non-technical reviewer can understand.</td>
+          <td><code>baseline.md</code> vs after numbers, plus written stakeholder confirmation</td>
+        </tr>
+        <tr>
+          <td>Delivery improvement</td>
+          <td>Evidence that your work improved delivery quality: defects caught before release, review time saved, or turnaround reduced, measured against the numbers you recorded in Week 0.</td>
+          <td>Baseline delta plus a reviewer or PM sign-off</td>
+        </tr>
+        <tr>
+          <td>AI adoption and enablement</td>
+          <td>Proof that you applied AI-native practices in daily work, plus one contribution that spreads it: an internal session, a written guide, a blog post, or an external talk.</td>
+          <td>Merged pull requests authored with an assistant, plus the session or post</td>
+        </tr>
+        <tr>
+          <td>Governance and security</td>
+          <td>The access model your agent runs under, how PII is handled, what the approval gates cover, and what the red-team exercise found in your agent and how you fixed it.</td>
+          <td>Unity Catalog permission model, guardrail config, red-team findings and fixes</td>
+        </tr>
+        <tr>
+          <td>Cost control</td>
+          <td>How you measured token and DBU consumption, and the specific technique you applied to reduce it - prompt trimming, caching, smaller model routing, or batching - with the before and after numbers.</td>
+          <td>Cost and latency view, with the week-1 to week-8 trend</td>
+        </tr>
+        <tr>
+          <td>Knowledge sharing</td>
+          <td>Whether your work is documented clearly enough that another team member can run and extend it without asking you questions. Tested, not assumed.</td>
+          <td>Handover README, plus a peer who cloned the repo and ran it</td>
+        </tr>
+        <tr>
+          <td>Technical defense</td>
+          <td>Defend your design under questioning: model selection, tool boundaries, failure modes, and what you would do differently with more time.</td>
+          <td>The live Q&amp;A in your Week 8 session</td>
+        </tr>
+      </table>
+
+      <div class="res-block" style="margin-top:28px;">
+        <h3>Recognition tiers</h3>
+        <table class="tier-table">
+          <tr><th>Tier</th><th>What it takes</th></tr>
+          <tr><td>Foundation</td><td>Every weekly artifact shipped and merged, the agent runs end to end, and the eval set exists. Five of the seven dimensions evidenced, including stakeholder value.</td></tr>
+          <tr><td>Practitioner</td><td>All seven dimensions evidenced. Agent deployed through Asset Bundles, stakeholder confirmation obtained, red-team findings fixed, baseline delta measured.</td></tr>
+          <tr><td>Lead</td><td>Practitioner, plus the artifact has been picked up by another team or a live engagement, plus you enabled others through a session, a written guide, or mentoring a Foundation participant.</td></tr>
+          <tr><td>Not yet</td><td>Evidence incomplete. Re-present at the next cohort review. This is a schedule outcome, not a judgement.</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="certification">
+    <div class="wrap">
+      <h2>Certifications Worth Pursuing</h2>
+      <p class="section-lede">Optional and self-paced, from Databricks and Anthropic. Listed in order of fit with what this program teaches.</p>
+
+      <table class="tier-table">
+        <tr><th>Certification</th><th>Why it fits this program</th><th>Link</th></tr>
+        <tr>
+          <td>Databricks Certified Context Engineer Associate</td>
+          <td>The closest match to this syllabus: retrieval and AI Search, memory with Lakebase, MCP tool integration, context window management, Unity Catalog governance of what reaches the model, and empirical evaluation of context decisions.</td>
+          <td><a href="https://www.databricks.com/learn/certification/context-engineer-associate" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td>Databricks Certified Generative AI Engineer Associate</td>
+          <td>Covers the build side of Weeks 2 to 6: retrieval applications, agent design, model selection, deployment and monitoring.</td>
+          <td><a href="https://www.databricks.com/learn/certification/genai-engineer-associate" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td>Claude Certified Developer, Foundations</td>
+          <td>Provider-side depth on the Claude API, tool use and MCP. Registration currently runs through an organization in the Claude Partner Network, so confirm Diggibyte's status first. The free Claude Academy courses are the open alternative in the meantime.</td>
+          <td><a href="https://anthropic-partners.skilljar.com/claude-certified-developer-foundations-certification" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+      </table>
+
+      <div class="res-block res-block-note" style="margin-top:18px;">
+        <p>The Databricks Certified Data Engineer Professional is a strong credential for the Data Engineering career path, but it does not test anything this program teaches. Pursue it on its own track rather than as part of this cohort.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resources">
+    <div class="wrap">
+      <h2>Resources</h2>
+      <p class="section-lede">Reference material grouped by phase. Partner Academy enrolment links are session-scoped and expire, so the catalog is listed as the stable entry point.</p>
+
+      <div class="res-block res-block-note">
+        <h3>Governance and data handling</h3>
+        <p>Every participant completes the core Databricks platform governance material plus the governance module for whichever model provider their stack uses. The Week 0 data rules apply for the full eight weeks: approved sandbox datasets only, and no customer data in any prompt, repo or endpoint.</p>
+      </div>
+
+      <div class="res-block">
+        <h3>Toolchain</h3>
+        <div class="resource-grid">
+          <a class="resource-pill databricks" href="https://github.com/databricks-solutions/ai-dev-kit" target="_blank" rel="noopener">Databricks AI Dev Kit</a>
+          <a class="resource-pill databricks" href="https://docs.databricks.com/aws/en/generative-ai/agent-framework/mcp" target="_blank" rel="noopener">MCP on Databricks</a>
+          <a class="resource-pill databricks" href="https://www.databricks.com/training/catalog" target="_blank" rel="noopener">Databricks Training Catalog</a>
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
+      <div class="res-block">
+        <h3>Weeks 1-3 &#183; Core foundation</h3>
+        <div class="resource-grid">
+          <a class="resource-pill claude" href="https://academy.claude.com/courses/claude-code-101" target="_blank" rel="noopener">Claude Code 101</a>
+          <a class="resource-pill claude" href="https://academy.claude.com/courses/claude-platform-101" target="_blank" rel="noopener">Claude Platform 101</a>
+          <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5786/building-rag-agents-with-agent-bricks" target="_blank" rel="noopener">Build RAG Agents</a>
+          <a class="resource-pill claude" href="https://academy.claude.com/courses/introduction-to-model-context-protocol" target="_blank" rel="noopener">MCP Intro</a>
+          <a class="resource-pill claude" href="https://academy.claude.com/courses/model-context-protocol-advanced-topics" target="_blank" rel="noopener">MCP Advanced</a>
+          <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5785/building-agentic-applications-on-databricks" target="_blank" rel="noopener">Agentic Apps</a>
+        </div>
+      </div>
 
+      <div class="res-block">
+        <h3>Weeks 4-5 &#183; Role specialization</h3>
+        <div class="resource-grid">
+          <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5785/building-agentic-applications-on-databricks" target="_blank" rel="noopener">Databricks Agentic Apps</a>
+          <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5786/building-rag-agents-with-agent-bricks" target="_blank" rel="noopener">RAG Agents</a>
+        </div>
+        <p class="section-lede" style="margin-top:10px;">Building with the Claude API is a strong course but runs eight hours or more. Treat it as optional depth outside program hours rather than a Week 4 or 5 commitment.</p>
+      </div>
 
-<section id="impact">
-  <div class="wrap">
-    <h2>Demonstrating Your Impact</h2>
-    <p class="section-lede">Week 8 is not a scored exam. You show real, evidence-based impact across six dimensions, reviewed in a live demo.</p>
+      <div class="res-block">
+        <h3>Weeks 6-7 &#183; Production</h3>
+        <div class="resource-grid">
+          <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5784/deploying-and-monitoring-agent-applications-on-databricks" target="_blank" rel="noopener">Deploy &amp; Monitor</a>
+          <a class="resource-pill claude" href="https://academy.claude.com/courses/claude-code-in-action" target="_blank" rel="noopener">Claude Code in Action</a>
+        </div>
+      </div>
 
-    <table class="tier-table">
-      <tr><th>Dimension</th><th>What you must show</th></tr>
-      <tr><td>Customer value delivered</td><td>A clear before and after picture: what changed for a customer or internal stakeholder because of the agent or tool you built, described in plain terms a non-technical reviewer can understand.</td></tr>
-      <tr><td>Delivery improvement</td><td>Evidence that your work reduced production issues: fewer bugs pushed, bugs caught before release, or a PM/reviewer sign-off confirming the improvement in delivery quality.</td></tr>
-      <tr><td>AI awareness and adoption</td><td>Proof that you applied AI-native practices in your daily work, plus any contribution to spreading that awareness: a blog post written, an internal session or seminar delivered, or an external talk given.</td></tr>
-      <tr><td>Governance contribution</td><td>Demonstrated understanding of cost and token usage: you can explain how you measured token consumption and what specific technique you used to reduce it (for example prompt trimming, caching, smaller model routing, or batching).</td></tr>
-      <tr><td>Knowledge sharing</td><td>Whether your work was documented clearly enough that another team member could reuse it without asking you questions.</td></tr>
-    </table>
-  </div>
-</section>
-
-<section id="certification">
-  <div class="wrap">
-    <h2>Certifications Worth Pursuing</h2>
-    <p class="section-lede">Optional, self-paced, from Databricks and Anthropic (Claude) only.</p>
-
-    <ul class="res-list">
-      <li><span class="res-topic">Databricks Certified Generative AI Engineer Associate</span><a href="https://www.databricks.com/learn/certification/genai-engineer-associate" target="_blank" rel="noopener">Open ↗</a></li>
-      <li><span class="res-topic">Databricks Certified Context Engineer Associate</span><a href="https://www.databricks.com/learn/certification/context-engineer-associate" target="_blank" rel="noopener">Open ↗</a></li>
-      <li><span class="res-topic">Databricks Certified Data Engineer Professional</span><a href="https://www.databricks.com/learn/certification/data-engineer-professional" target="_blank" rel="noopener">Open ↗</a></li>
-      <li><span class="res-topic">Claude Certified Developer, Foundations</span><a href="https://anthropic-partners.skilljar.com/claude-certified-developer-foundations-certification" target="_blank" rel="noopener">Open ↗</a></li>
-    </ul>
-    <p class="wk-body" style="margin-top:16px;">The Claude certification currently requires registration through an organization in the Claude Partner Network. Confirm Diggibyte's status before treating this as freely accessible; Anthropic Academy's free courses are the open alternative in the meantime.</p>
-  </div>
-</section>
-
-<section id="resources">
-  <div class="wrap">
-    <h2>Resources</h2>
-    <p class="section-lede">Reference material grouped by phase and role. Expand a card for more detail when you need context.</p>
-
-    <div class="res-block res-block-note">
-      <h3>Governance track</h3>
-      <p>Every participant should learn the core platform governance basics and complete one provider governance track beyond Databricks. Databricks is the platform baseline; candidates should also learn either Claude or Databricks governance depending on the model stack they are using.</p>
-    </div>
-
-    <div class="res-block">
-      <h3>Phase 1 · Weeks 1–3</h3>
-      <div class="resource-grid">
-        <a class="resource-pill claude" href="https://academy.claude.com/courses/claude-code-101" target="_blank" rel="noopener">Claude Code 101</a>
-        <a class="resource-pill claude" href="https://academy.claude.com/courses/claude-platform-101" target="_blank" rel="noopener">Claude Platform 101</a>
-        <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5786/building-rag-agents-with-agent-bricks/sessions/22162/B5QNWM4" target="_blank" rel="noopener">Build RAG Agents</a>
-        <a class="resource-pill claude" href="https://academy.claude.com/courses/introduction-to-model-context-protocol" target="_blank" rel="noopener">MCP Intro</a>
-        <a class="resource-pill claude" href="https://academy.claude.com/courses/model-context-protocol-advanced-topics" target="_blank" rel="noopener">MCP Advanced</a>
-        <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5785/building-agentic-applications-on-databricks" target="_blank" rel="noopener">Agentic Apps</a>
+      <div class="res-block">
+        <h3>Week 8 &#183; Showcase</h3>
+        <div class="resource-grid">
+          <a class="resource-pill claude" href="https://academy.claude.com/courses/ai-native-sdlc-playbook" target="_blank" rel="noopener">AI-Native SDLC</a>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="res-block">
-      <h3>Phase 2 · Weeks 4–5</h3>
-      <div class="resource-grid">
-        <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5785/building-agentic-applications-on-databricks" target="_blank" rel="noopener">Databricks Agentic Apps</a>
-        <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5786/building-rag-agents-with-agent-bricks/sessions/22162/B5QNWM4" target="_blank" rel="noopener">RAG Agents</a>
-        <a class="resource-pill claude" href="https://academy.claude.com/courses/building-with-the-claude-api" target="_blank" rel="noopener">Claude API</a>
-      </div>
+  <footer>
+    <div class="wrap">
+      <div class="rule"></div>
+      Diggibyte &#183; 8-Week Agentic Engineering Upskilling Program
     </div>
+  </footer>
 
-    <div class="res-block">
-      <h3>Phase 3 · Weeks 6–7</h3>
-      <div class="resource-grid">
-        <a class="resource-pill databricks" href="https://partner-academy.databricks.com/learn/courses/5784/deploying-and-monitoring-agent-applications-on-databricks/sessions/22172/B7NK2WO" target="_blank" rel="noopener">Deploy &amp; Monitor</a>
-        <a class="resource-pill claude" href="https://academy.claude.com/courses/claude-code-in-action" target="_blank" rel="noopener">Claude Code in Action</a>
-      </div>
-    </div>
+  <script>
+    const themeToggle = document.querySelector('.theme-toggle');
+    const brandLogo = document.querySelector('.brand-logo');
+    let savedTheme = null;
 
-    <div class="res-block">
-      <h3>Phase 4 · Week 8</h3>
-      <div class="resource-grid">
-        <a class="resource-pill claude" href="https://academy.claude.com/courses/ai-native-sdlc-playbook" target="_blank" rel="noopener">AI-Native SDLC</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="rule"></div>
-    Diggibyte · 8-Week Agentic Engineering Upskilling Program
-  </div>
-</footer>
-
-<script>
-  const themeToggle = document.querySelector('.theme-toggle');
-  const brandLogo = document.querySelector('.brand-logo');
-  let savedTheme = null;
-
-  try {
-    savedTheme = localStorage.getItem('theme');
-  } catch (error) {
-    savedTheme = null;
-  }
-
-  if (savedTheme === 'dark') {
-    document.body.classList.remove('light-theme');
-  }
-
-  function updateThemeToggle() {
-    const isLight = document.body.classList.contains('light-theme');
-    brandLogo.src = isLight ? 'assets/logo.png' : 'assets/logo_dark.png';
-    themeToggle.setAttribute('aria-pressed', String(isLight));
-    themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
-    themeToggle.querySelector('.theme-icon').textContent = isLight ? '☾' : '☀';
-  }
-
-  themeToggle.addEventListener('click', () => {
-    const isLight = document.body.classList.toggle('light-theme');
     try {
-      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+      savedTheme = localStorage.getItem('theme');
     } catch (error) {
-      // Theme switching still works when browser storage is unavailable.
+      savedTheme = null;
     }
-    updateThemeToggle();
-  });
 
-  updateThemeToggle();
-</script>
+    if (savedTheme === 'dark') {
+      document.body.classList.remove('light-theme');
+    }
+
+    function updateThemeToggle() {
+      const isLight = document.body.classList.contains('light-theme');
+      brandLogo.src = isLight ? 'assets/logo.png' : 'assets/logo_dark.png';
+      themeToggle.setAttribute('aria-pressed', String(isLight));
+      themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
+      themeToggle.querySelector('.theme-icon').textContent = isLight ? '\u263E' : '\u2600';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const isLight = document.body.classList.toggle('light-theme');
+      try {
+        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+      } catch (error) {
+        // Theme switching still works when browser storage is unavailable.
+      }
+      updateThemeToggle();
+    });
+
+    updateThemeToggle();
+  </script>
 </body>
 </html>
