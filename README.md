@@ -1,10 +1,12 @@
-# Diggibyte Agentic Journey
+# Diggibyte Learning & Development
 
-This project is a static landing page for the Diggibyte employee upskilling program. It is built with plain HTML and CSS and does not require a build step.
+This project is a static learning and development site for Diggibyte. It is built with plain HTML and CSS and does not require a build step.
 
 ## Project structure
 
-- `index.html` – page structure and content
+- `index.html` – Learning & Development home and links to the learning paths
+- `new-joiner.html` – Databricks technical onboarding plan for new joiners
+- `ai-enablement.html` – AI enablement upskilling program
 - `css/styles.css` – all styling and layout rules
 - `assets/logo.png` and `assets/logo_dark.png` – branding assets, switched by the theme toggle
 
@@ -33,7 +35,7 @@ Then open http://localhost:8000 in your browser.
 
 ## Program content ownership
 
-The page is the single source of truth for the upskilling program. Before changing any week, track or rubric, check that these stay consistent:
+The AI enablement page is the source of truth for the upskilling program. Before changing any week, track or rubric, check that these stay consistent:
 
 - The impact dimension count in the hero stat matches the number of rows in the impact table.
 - Every recognition tier referenced in the copy is defined in the tier table.
